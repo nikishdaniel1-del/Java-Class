@@ -1,3 +1,11 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        ".",
+        "self study",
+        "week 1"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Program Files\\Apache Software Foundation\\Tomcat 10.1_Tomcat10.1.59\\lib\\servlet-api.jar"
+    ]
 }

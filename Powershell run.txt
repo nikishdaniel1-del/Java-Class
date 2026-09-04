@@ -1,0 +1,5 @@
+powershell -ExecutionPolicy Bypass -File .\watch.ps1
+
+startup tomcat : PS C:\Program Files\Apache Software Foundation\Tomcat 10.1_Tomcat10.1.59\bin> & "$tomcat\bin\startup.bat" 
+
+shutdown tomcat : PS C:\Program Files\Apache Software Foundation\Tomcat 10.1_Tomcat10.1.59\bin> & "$tomcat\bin\shutdown.bat"

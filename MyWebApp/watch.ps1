@@ -99,6 +99,5 @@ while ($true) {
             }
         }
     }
-
     Start-Sleep -Milliseconds 500
 }

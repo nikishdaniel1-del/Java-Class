@@ -1,4 +1,4 @@
-package MyWebApp.src.com.example;
+package com.example;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -18,12 +18,12 @@ public class HRMSPreferenceServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession(false);
         if (session == null) {
-            response.sendRedirect("sessionLogin");
+            response.sendRedirect("sessionLogin.html");
             return;
         }
         String employeeId = (String) session.getAttribute("employeeId");
         if (employeeId == null) {
-            response.sendRedirect("sessionLogin");
+            response.sendRedirect("sessionLogin.html");
             return;
         }
         String language = request.getParameter("language");

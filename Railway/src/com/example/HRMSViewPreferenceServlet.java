@@ -1,4 +1,4 @@
-package MyWebApp.src.com.example;
+package com.example;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
@@ -19,13 +19,13 @@ public class HRMSViewPreferenceServlet extends HttpServlet
         HttpSession session = request.getSession(false);
         if (session == null) 
         {
-            response.sendRedirect("sessionLogin");
+            response.sendRedirect("sessionLogin.html");
             return;
         }
         String employeeId = (String) session.getAttribute("employeeId");
         if (employeeId == null) 
         {
-            response.sendRedirect("sessionLogin");
+            response.sendRedirect("sessionLogin.html");
             return;
         }
         String language = null;

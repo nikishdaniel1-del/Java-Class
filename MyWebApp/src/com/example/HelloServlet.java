@@ -14,7 +14,7 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                           HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/employeePreference.html")
+        request.getRequestDispatcher("/Railway.html")
                .forward(request, response);
     }
     @Override
